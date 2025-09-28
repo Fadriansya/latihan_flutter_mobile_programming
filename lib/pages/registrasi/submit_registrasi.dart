@@ -5,23 +5,23 @@ class SubmitRegistrasi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 60,
       width: MediaQuery.of(context).size.width - 2 * 24,
       child: ElevatedButton(
         onPressed: () {},
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.green,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
+        ),
         child: Text(
           "Daftar",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w500,
             color: Colors.white,
-          ),
-        ),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.green,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
           ),
         ),
       ),
